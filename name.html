@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cup Tag - Teddy Brew Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Prompt:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="menu-body">
+
+    <div class="menu-container text-center">
+        <!-- ช่องสำหรับพิมพ์ชื่อ -->
+        <div style="margin-bottom: 20px;">
+            <label for="nameInput" style="font-size: 0.9rem; font-weight: 500; display: block; margin-bottom: 8px;">พิมพ์ชื่อของคุณสำหรับ Order นี้:</label>
+            <input type="text" id="nameInput" placeholder="กรอกชื่อของคุณที่นี่" maxlength="15" style="padding: 8px 15px; font-size: 1rem; border: 2px solid #000; border-radius: 8px; text-align: center; width: 80%; outline: none;">
+        </div>
+
+        <!-- ป้ายกระดาษจำลองชื่อลูกค้า -->
+        <div class="order-tag-card" style="min-height: 220px;">
+            <p class="tag-title">DRINK FOR</p>
+            <h1 id="customerName" class="customer-name-display">-</h1>
+            <div class="tag-divider"></div>
+            <!-- พื้นที่แสดงรายการเมนูพร้อมตัวเลือก -->
+            <div id="selectedDrinkList" style="font-size: 0.8rem; font-weight: 600; text-align: left; margin-bottom: 10px; line-height: 1.6;">
+            </div>
+            <div class="tag-divider"></div>
+            <div class="tag-footer-info">
+                <span>TEDDY BREW 🧸</span>
+                <span>ORDER #406</span>
+            </div>
+        </div>
+
+        <div class="action-footer" style="margin-top: 30px;">
+            <button id="finishBtn" class="choose-btn">ยืนยันการสั่งซื้อ</button>
+            <br>
+            <a href="drink.html" class="back-link">← เลือกเมนูเพิ่ม</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

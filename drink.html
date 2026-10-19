@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูเครื่องดื่มและของหวาน - Teddy Brew Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="menu-body">
+
+    <div class="menu-container-large">
+        <div class="menu-header">
+            <span class="cafe-icon">🧸☕</span>
+            <h2>Teddy Brew Cafe Menu</h2>
+        </div>
+
+        <!-- ปุ่มกรองหมวดหมู่ -->
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="tea">Tea</button>
+            <button class="filter-btn" data-filter="milk">Milk / Chocolate</button>
+            <button class="filter-btn" data-filter="juice">Juice & Smoothies</button>
+            <button class="filter-btn" data-filter="bakery">Bakery & Dessert</button>
+        </div>
+
+        <!-- รายการเมนูทั้งหมด -->
+        <div class="drink-grid-catalog">
+            
+            <!-- COFFEE -->
+            <div class="drink-card" data-category="coffee" data-name="เอสเปรสโซ (Espresso)" data-type="drink">
+                <div class="drink-info">
+                    <h3>เอสเปรสโซ (Espresso)</h3>
+                    <p>ร้อน 35.- | เย็น 55.- | ปั่น 60.-</p>
+                    <span class="price-tag">เริ่มต้น 35 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (35.-)</option>
+                            <option value="เย็น" selected>เย็น (55.-)</option>
+                            <option value="ปั่น">ปั่น (60.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="coffee" data-name="แบล็คคอฟฟี่ (Black Coffee)" data-type="drink">
+                <div class="drink-info">
+                    <h3>แบล็คคอฟฟี่ (Black Coffee)</h3>
+                    <p>ร้อน 35.- | เย็น 55.-</p>
+                    <span class="price-tag">เริ่มต้น 35 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (35.-)</option>
+                            <option value="เย็น" selected>เย็น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="coffee" data-name="คาปูชิโน (Cappuccino)" data-type="drink">
+                <div class="drink-info">
+                    <h3>คาปูชิโน (Cappuccino)</h3>
+                    <p>ร้อน 45.- | เย็น 60.- | ปั่น 65.-</p>
+                    <span class="price-tag">เริ่มต้น 45 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (45.-)</option>
+                            <option value="เย็น" selected>เย็น (60.-)</option>
+                            <option value="ปั่น">ปั่น (65.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEA -->
+            <div class="drink-card" data-category="tea" data-name="ชา (Tea)" data-type="drink">
+                <div class="drink-info">
+                    <h3>ชา (Tea)</h3>
+                    <p>ร้อน 40.-</p>
+                    <span class="price-tag">40 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน" selected>ร้อน (40.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="tea" data-name="ชาเขียวนม (Green Tea with Milk)" data-type="drink">
+                <div class="drink-info">
+                    <h3>ชาเขียวนม (Green Tea with Milk)</h3>
+                    <p>ร้อน 45.- | เย็น 50.- | ปั่น 55.-</p>
+                    <span class="price-tag">เริ่มต้น 45 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (45.-)</option>
+                            <option value="เย็น" selected>เย็น (50.-)</option>
+                            <option value="ปั่น">ปั่น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="tea" data-name="ชานม (Tea with Milk)" data-type="drink">
+                <div class="drink-info">
+                    <h3>ชานม (Tea with Milk)</h3>
+                    <p>ร้อน 40.- | เย็น 45.- | ปั่น 50.-</p>
+                    <span class="price-tag">เริ่มต้น 40 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (40.-)</option>
+                            <option value="เย็น" selected>เย็น (45.-)</option>
+                            <option value="ปั่น">ปั่น (50.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MILK / CHOCOLATE -->
+            <div class="drink-card" data-category="milk" data-name="นมสด (Fresh Milk)" data-type="drink">
+                <div class="drink-info">
+                    <h3>นมสด (Fresh Milk)</h3>
+                    <p>ร้อน 35.- | เย็น 45.- | ปั่น 50.-</p>
+                    <span class="price-tag">เริ่มต้น 35 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (35.-)</option>
+                            <option value="เย็น" selected>เย็น (45.-)</option>
+                            <option value="ปั่น">ปั่น (50.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="milk" data-name="ช็อกโกแลต (Chocolate)" data-type="drink">
+                <div class="drink-info">
+                    <h3>ช็อกโกแลต (Chocolate)</h3>
+                    <p>ร้อน 40.- | เย็น 50.- | ปั่น 55.-</p>
+                    <span class="price-tag">เริ่มต้น 40 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ร้อน">ร้อน (40.-)</option>
+                            <option value="เย็น" selected>เย็น (50.-)</option>
+                            <option value="ปั่น">ปั่น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUICE & SMOOTHIES (แยกรายผลไม้) -->
+            <div class="drink-card" data-category="juice" data-name="น้ำลิ้นจี่ (Lychee Juice)" data-type="drink">
+                <div class="drink-info">
+                    <h3>น้ำลิ้นจี่ (Lychee Juice)</h3>
+                    <p>เย็น 40.- | ปั่น 45.-</p>
+                    <span class="price-tag">เริ่มต้น 40 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="เย็น" selected>เย็น (40.-)</option>
+                            <option value="ปั่น">ปั่น (45.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="juice" data-name="น้ำผลไม้ปั่น - สตอเบอร์รี่" data-type="drink">
+                <div class="drink-info">
+                    <h3>น้ำผลไม้ปั่น - สตอเบอร์รี่</h3>
+                    <p>ปั่น 55.-</p>
+                    <span class="price-tag">55 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="juice" data-name="น้ำผลไม้ปั่น - กีวี่" data-type="drink">
+                <div class="drink-info">
+                    <h3>น้ำผลไม้ปั่น - กีวี่</h3>
+                    <p>ปั่น 55.-</p>
+                    <span class="price-tag">55 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="juice" data-name="น้ำผลไม้ปั่น - มิกซ์เบอร์รี่" data-type="drink">
+                <div class="drink-info">
+                    <h3>น้ำผลไม้ปั่น - มิกซ์เบอร์รี่</h3>
+                    <p>ปั่น 55.-</p>
+                    <span class="price-tag">55 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="juice" data-name="โยเกิร์ตสมูทตี้ - สตอเบอร์รี่" data-type="drink">
+                <div class="drink-info">
+                    <h3>โยเกิร์ตสมูทตี้ - สตอเบอร์รี่</h3>
+                    <p>ปั่น 65.-</p>
+                    <span class="price-tag">65 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ปั่น" selected>ปั่น (65.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="juice" data-name="โยเกิร์ตสมูทตี้ - มิกซ์เบอร์รี่" data-type="drink">
+                <div class="drink-info">
+                    <h3>โยเกิร์ตสมูทตี้ - มิกซ์เบอร์รี่</h3>
+                    <p>ปั่น 65.-</p>
+                    <span class="price-tag">65 บาท</span>
+                </div>
+                <div class="drink-options">
+                    <div class="option-group">
+                        <label>รูปแบบ:</label>
+                        <select class="serve-type">
+                            <option value="ปั่น" selected>ปั่น (65.-)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>ความหวาน:</label>
+                        <select class="sweetness">
+                            <option value="หวาน 0%">0%</option>
+                            <option value="หวาน 50%">50%</option>
+                            <option value="หวาน 100%" selected>100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAKERY & DESSERT -->
+            <div class="drink-card" data-category="bakery" data-name="ครัวซองต์เนยสด (Butter Croissant)" data-type="bakery">
+                <div class="drink-info">
+                    <h3>ครัวซองต์เนยสด (Butter Croissant)</h3>
+                    <p>อบสดใหม่ หอมเนยแท้ กรอบนอกนุ่มใน</p>
+                    <span class="price-tag">65 บาท</span>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="bakery" data-name="เค้กช็อกโกแลต (Chocolate Fudge Cake)" data-type="bakery">
+                <div class="drink-info">
+                    <h3>เค้กช็อกโกแลต (Chocolate Fudge Cake)</h3>
+                    <p>เค้กเนื้อนุ่มราดช็อกโกแลตเข้มข้น</p>
+                    <span class="price-tag">75 บาท</span>
+                </div>
+            </div>
+
+            <div class="drink-card" data-category="bakery" data-name="ฮันนีโทสต์ (Honey Toast)" data-type="bakery">
+                <div class="drink-info">
+                    <h3>ฮันนีโทสต์ (Honey Toast)</h3>
+                    <p>ขนมปังอบเนยฉ่ำๆ ราดน้ำผึ้งเสิร์ฟพร้อมวิปครีม</p>
+                    <span class="price-tag">119 บาท</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="action-footer" style="margin-top: 30px;">
+            <button id="nextBtn" class="choose-btn disabled" disabled>กรุณาเลือกเมนูก่อน</button>
+            <br>
+            <a href="index.html" class="back-link">← กลับหน้าแรก</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
