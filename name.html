@@ -17,17 +17,23 @@
         </div>
 
         <!-- ป้ายกระดาษจำลองชื่อลูกค้า -->
-        <div class="order-tag-card" style="min-height: 220px;">
+        <div class="order-tag-card" style="min-height: 240px;">
             <p class="tag-title">DRINK FOR</p>
             <h1 id="customerName" class="customer-name-display">-</h1>
             <div class="tag-divider"></div>
+            
             <!-- พื้นที่แสดงรายการเมนูพร้อมตัวเลือก -->
             <div id="selectedDrinkList" style="font-size: 0.8rem; font-weight: 600; text-align: left; margin-bottom: 10px; line-height: 1.6;">
             </div>
+
+            <!-- แสดงราคารวมสุทธิ -->
+            <div id="totalPriceDisplay" style="font-size: 0.85rem; font-weight: bold; text-align: right; margin-top: 10px; color: #d77a61;">
+            </div>
+
             <div class="tag-divider"></div>
             <div class="tag-footer-info">
                 <span>TEDDY BREW 🧸</span>
-                <span>ORDER #001</span>
+                <span id="orderNumberDisplay">ORDER #001</span>
             </div>
         </div>
 

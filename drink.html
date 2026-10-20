@@ -39,9 +39,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (35.-)</option>
-                            <option value="เย็น" selected>เย็น (55.-)</option>
-                            <option value="ปั่น">ปั่น (60.-)</option>
+                            <option value="ร้อน" data-price="35">ร้อน (35.-)</option>
+                            <option value="เย็น" data-price="55" selected>เย็น (55.-)</option>
+                            <option value="ปั่น" data-price="60">ปั่น (60.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -65,8 +65,8 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (35.-)</option>
-                            <option value="เย็น" selected>เย็น (55.-)</option>
+                            <option value="ร้อน" data-price="35">ร้อน (35.-)</option>
+                            <option value="เย็น" data-price="55" selected>เย็น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -90,9 +90,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (45.-)</option>
-                            <option value="เย็น" selected>เย็น (60.-)</option>
-                            <option value="ปั่น">ปั่น (65.-)</option>
+                            <option value="ร้อน" data-price="45">ร้อน (45.-)</option>
+                            <option value="เย็น" data-price="60" selected>เย็น (60.-)</option>
+                            <option value="ปั่น" data-price="65">ปั่น (65.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -117,7 +117,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน" selected>ร้อน (40.-)</option>
+                            <option value="ร้อน" data-price="40" selected>ร้อน (40.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -141,9 +141,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (45.-)</option>
-                            <option value="เย็น" selected>เย็น (50.-)</option>
-                            <option value="ปั่น">ปั่น (55.-)</option>
+                            <option value="ร้อน" data-price="45">ร้อน (45.-)</option>
+                            <option value="เย็น" data-price="50" selected>เย็น (50.-)</option>
+                            <option value="ปั่น" data-price="55">ปั่น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -167,9 +167,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (40.-)</option>
-                            <option value="เย็น" selected>เย็น (45.-)</option>
-                            <option value="ปั่น">ปั่น (50.-)</option>
+                            <option value="ร้อน" data-price="40">ร้อน (40.-)</option>
+                            <option value="เย็น" data-price="45" selected>เย็น (45.-)</option>
+                            <option value="ปั่น" data-price="50">ปั่น (50.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -194,9 +194,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (35.-)</option>
-                            <option value="เย็น" selected>เย็น (45.-)</option>
-                            <option value="ปั่น">ปั่น (50.-)</option>
+                            <option value="ร้อน" data-price="35">ร้อน (35.-)</option>
+                            <option value="เย็น" data-price="45" selected>เย็น (45.-)</option>
+                            <option value="ปั่น" data-price="50">ปั่น (50.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -220,9 +220,9 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ร้อน">ร้อน (40.-)</option>
-                            <option value="เย็น" selected>เย็น (50.-)</option>
-                            <option value="ปั่น">ปั่น (55.-)</option>
+                            <option value="ร้อน" data-price="40">ร้อน (40.-)</option>
+                            <option value="เย็น" data-price="50" selected>เย็น (50.-)</option>
+                            <option value="ปั่น" data-price="55">ปั่น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -236,7 +236,7 @@
                 </div>
             </div>
 
-            <!-- JUICE & SMOOTHIES (แยกรายผลไม้) -->
+            <!-- JUICE & SMOOTHIES -->
             <div class="drink-card" data-category="juice" data-name="น้ำลิ้นจี่ (Lychee Juice)" data-type="drink">
                 <div class="drink-info">
                     <h3>น้ำลิ้นจี่ (Lychee Juice)</h3>
@@ -247,8 +247,8 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="เย็น" selected>เย็น (40.-)</option>
-                            <option value="ปั่น">ปั่น (45.-)</option>
+                            <option value="เย็น" data-price="40" selected>เย็น (40.-)</option>
+                            <option value="ปั่น" data-price="45">ปั่น (45.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -272,7 +272,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                            <option value="ปั่น" data-price="55" selected>ปั่น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -296,7 +296,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                            <option value="ปั่น" data-price="55" selected>ปั่น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -320,7 +320,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ปั่น" selected>ปั่น (55.-)</option>
+                            <option value="ปั่น" data-price="55" selected>ปั่น (55.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -344,7 +344,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ปั่น" selected>ปั่น (65.-)</option>
+                            <option value="ปั่น" data-price="65" selected>ปั่น (65.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -368,7 +368,7 @@
                     <div class="option-group">
                         <label>รูปแบบ:</label>
                         <select class="serve-type">
-                            <option value="ปั่น" selected>ปั่น (65.-)</option>
+                            <option value="ปั่น" data-price="65" selected>ปั่น (65.-)</option>
                         </select>
                     </div>
                     <div class="option-group">
@@ -382,8 +382,8 @@
                 </div>
             </div>
 
-            <!-- BAKERY & DESSERT -->
-            <div class="drink-card" data-category="bakery" data-name="ครัวซองต์เนยสด (Butter Croissant)" data-type="bakery">
+            <!-- BAKERY & DESSERT (เพิ่ม data-price สำหรับเบเกอรี) -->
+            <div class="drink-card" data-category="bakery" data-name="ครัวซองต์เนยสด (Butter Croissant)" data-type="bakery" data-price="65">
                 <div class="drink-info">
                     <h3>ครัวซองต์เนยสด (Butter Croissant)</h3>
                     <p>อบสดใหม่ หอมเนยแท้ กรอบนอกนุ่มใน</p>
@@ -391,7 +391,7 @@
                 </div>
             </div>
 
-            <div class="drink-card" data-category="bakery" data-name="เค้กช็อกโกแลต (Chocolate Fudge Cake)" data-type="bakery">
+            <div class="drink-card" data-category="bakery" data-name="เค้กช็อกโกแลต (Chocolate Fudge Cake)" data-type="bakery" data-price="75">
                 <div class="drink-info">
                     <h3>เค้กช็อกโกแลต (Chocolate Fudge Cake)</h3>
                     <p>เค้กเนื้อนุ่มราดช็อกโกแลตเข้มข้น</p>
@@ -399,7 +399,7 @@
                 </div>
             </div>
 
-            <div class="drink-card" data-category="bakery" data-name="ฮันนีโทสต์ (Honey Toast)" data-type="bakery">
+            <div class="drink-card" data-category="bakery" data-name="ฮันนีโทสต์ (Honey Toast)" data-type="bakery" data-price="119">
                 <div class="drink-info">
                     <h3>ฮันนีโทสต์ (Honey Toast)</h3>
                     <p>ขนมปังอบเนยฉ่ำๆ ราดน้ำผึ้งเสิร์ฟพร้อมวิปครีม</p>
