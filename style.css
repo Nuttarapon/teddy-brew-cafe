@@ -5,14 +5,20 @@
     font-family: 'Prompt', sans-serif;
 }
 
-/* ธีมหน้าแรก สดใสโทนพาสเทล */
+.hidden {
+    display: none !important;
+}
+
+/* =========================================
+   ธีมหน้าแรก (index.html)
+   ========================================= */
 .home-body {
     background: linear-gradient(135deg, #ffecb6 0%, #ffd1dc 50%, #b5ead7 100%);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    padding: 20px;
     position: relative;
 }
 
@@ -26,19 +32,22 @@
     font-size: 0.9rem;
     font-weight: 500;
     box-shadow: 3px 3px 0px #000;
+    text-align: center;
 }
 
 .shop-container {
     text-align: center;
-    position: relative;
+    width: 100%;
+    max-width: 480px;
 }
 
 .shop-window-link {
     text-decoration: none;
+    display: block;
 }
 
 .shop-building {
-    width: 480px;
+    width: 100%;
     height: 340px;
     background: #fff8f0;
     border: 3px solid #000;
@@ -52,7 +61,6 @@
     transform: translateY(-4px);
 }
 
-/* กันสาดสีสันสดใส */
 .awning {
     height: 55px;
     background: repeating-linear-gradient(45deg, #fff, #fff 15px, #f28b82 15px, #f28b82 30px);
@@ -61,8 +69,8 @@
 }
 
 .glass-window {
-    width: 300px;
-    height: 190px;
+    width: 65%;
+    height: 185px;
     background: #4a3b32;
     border: 3px solid #000;
     margin: 20px auto;
@@ -76,14 +84,14 @@
 .shelf {
     color: #fff;
     font-size: 1.8rem;
-    letter-spacing: 12px;
+    letter-spacing: 10px;
 }
 
 .door {
     position: absolute;
     bottom: 0;
-    right: 45px;
-    width: 75px;
+    right: 8%;
+    width: 72px;
     height: 105px;
     background: #d7ccc8;
     border: 3px solid #000;
@@ -104,17 +112,26 @@
     border-radius: 4px;
     box-shadow: 1px 1px 0px #000;
     text-transform: uppercase;
-    text-align: center;
     transform: rotate(-5deg);
 }
 
-/* ธีมหน้าเมนูและหน้าชื่อ */
+.tap-hint {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* =========================================
+   ธีมหน้าเมนู หน้าชื่อ และหน้าขอบคุณ
+   ========================================= */
 .menu-body {
     background: #fceade;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .text-center {
@@ -123,15 +140,25 @@
 
 .menu-container-large {
     background: #fff;
-    width: 900px;
-    max-width: 95%;
+    width: 920px;
+    max-width: 100%;
     max-height: 90vh;
     overflow-y: auto;
-    padding: 30px;
+    padding: 25px;
     border: 3px solid #000;
     border-radius: 12px;
     box-shadow: 6px 6px 0px #000;
     text-align: center;
+}
+
+.menu-container-small {
+    background: #fff;
+    width: 460px;
+    max-width: 100%;
+    padding: 30px 25px;
+    border: 3px solid #000;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px #000;
 }
 
 .menu-header {
@@ -144,7 +171,7 @@
 
 .menu-header h2 {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 5px;
 }
 
@@ -152,13 +179,13 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .filter-btn {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1.5px solid #ddd;
     padding: 6px 16px;
     border-radius: 20px;
     cursor: pointer;
@@ -172,6 +199,7 @@
     border-color: #000;
 }
 
+/* การ์ดเมนู */
 .drink-grid-catalog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -183,49 +211,29 @@
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 15px;
-    cursor: pointer;
-    transition: all 0.2s;
     background: #fafafa;
-}
-
-.drink-card:hover {
-    border-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s;
 }
 
 .drink-card.selected {
-    border-color: #000 !important;
-    background: #fff3e0 !important;
-    transform: translateY(-2px);
-    box-shadow: 4px 4px 0px #000;
-    position: relative;
-}
-
-.drink-card.selected::after {
-    content: '\2713';
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: #000;
-    color: #fff;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
+    border-color: #000;
+    background: #fff8ee;
+    box-shadow: 3px 3px 0px #000;
 }
 
 .drink-info h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .drink-info p {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .price-tag {
@@ -247,16 +255,132 @@
     flex-direction: column;
     font-size: 0.75rem;
     color: #444;
+    flex: 1;
 }
 
 .option-group select {
-    padding: 3px 6px;
-    font-size: 0.75rem;
-    border: 1px solid #ccc;
+    margin-top: 2px;
+    padding: 4px 6px;
+    font-size: 0.78rem;
+    border: 1px solid #bbb;
     border-radius: 4px;
     background: #fff;
     outline: none;
     cursor: pointer;
+}
+
+.add-to-cart-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 7px;
+    background: #fff;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.add-to-cart-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.add-to-cart-btn.added-feedback {
+    background: #4caf50;
+    border-color: #4caf50;
+    color: #fff;
+}
+
+/* กล่องสรุปตะกร้าสินค้า */
+.cart-summary-box {
+    margin-top: 25px;
+    padding: 15px;
+    background: #fdfbf7;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.cart-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-summary-header h3 {
+    font-size: 0.95rem;
+}
+
+.clear-cart-btn {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 0.78rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cart-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 0.82rem;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-price {
+    color: #d77a61;
+    font-weight: 600;
+    font-size: 0.78rem;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-btn {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #000;
+    background: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.qty-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.qty-num {
+    font-weight: 600;
+    min-width: 16px;
+    text-align: center;
+}
+
+.live-total-display {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #000;
+}
+
+/* ปุ่มและลิงก์ส่วนท้าย */
+.action-footer {
+    margin-top: 25px;
 }
 
 .choose-btn {
@@ -264,7 +388,7 @@
     color: #fff;
     border: 2px solid #000;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 0.95rem;
     cursor: pointer;
     transition: background 0.2s;
@@ -280,38 +404,10 @@
     background: #333;
 }
 
-.order-tag-card {
-    background: #fdfbf7;
-    border: 2px dashed #000;
-    padding: 30px;
-    max-width: 320px;
-    margin: 0 auto;
-    box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-}
-
-.tag-title {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    color: #777;
-}
-
-.customer-name-display {
-    font-family: 'Caveat', cursive;
-    font-size: 3rem;
-    margin: 10px 0;
-    color: #000;
-}
-
-.tag-divider {
-    border-bottom: 1px solid #000;
-    margin: 15px 0;
-}
-
-.tag-footer-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    font-weight: 600;
+.link-btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .back-link {
@@ -324,4 +420,283 @@
 
 .back-link:hover {
     text-decoration: underline;
+}
+
+/* =========================================
+   หน้าป้ายชื่อและใบเสร็จ (name.html & thankyou.html)
+   ========================================= */
+.input-section {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    font-size: 0.88rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #d9534f;
+}
+
+.styled-input {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    width: 85%;
+    outline: none;
+}
+
+.note-input {
+    font-size: 0.85rem;
+    border-color: #888;
+}
+
+.input-error {
+    border-color: #d9534f !important;
+    background: #fff5f5;
+}
+
+.error-msg {
+    color: #d9534f;
+    font-size: 0.78rem;
+    margin-top: 4px;
+}
+
+.order-tag-card {
+    background: #fdfbf7;
+    border: 2px dashed #000;
+    padding: 25px;
+    max-width: 340px;
+    margin: 20px auto 0;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.tag-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.customer-name-display {
+    font-family: 'Caveat', cursive;
+    font-size: 2.8rem;
+    margin: 8px 0;
+    color: #000;
+    word-break: break-word;
+}
+
+.tag-divider {
+    border-bottom: 1px solid #000;
+    margin: 12px 0;
+}
+
+.selected-drink-list {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.tag-note-display {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    color: #555;
+    text-align: left;
+    font-style: italic;
+}
+
+.total-price-display {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 10px;
+    color: #d77a61;
+}
+
+.tag-footer-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* หน้า Thank You */
+.thankyou-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.thankyou-title {
+    font-family: 'Caveat', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+
+.thankyou-subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.receipt-box {
+    background: #fdfbf7;
+    border: 2px dashed #000;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.receipt-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+/* รองรับมือถือจอเล็ก */
+@media (max-width: 480px) {
+    .shop-building {
+        height: 290px;
+    }
+    .glass-window {
+        width: 58%;
+        height: 150px;
+        margin-left: 12%;
+    }
+    .shelf {
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+    }
+    .door {
+        width: 60px;
+        height: 90px;
+        right: 6%;
+    }
+}
+/* =========================================
+   เพิ่มเติม: วัน-เวลา, แถบติดตามสถานะ และปุ่มคัดลอก
+   ========================================= */
+.tag-datetime {
+    font-size: 0.72rem;
+    color: #777;
+    margin-top: -4px;
+    margin-bottom: 8px;
+}
+
+.receipt-datetime {
+    font-size: 0.72rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* แถบติดตามสถานะการชง */
+.status-tracker-box {
+    background: #fff8ee;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px 12px;
+    margin: 15px 0 20px;
+}
+
+.status-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.72rem;
+    color: #999;
+    font-weight: 500;
+    min-width: 58px;
+    transition: color 0.3s;
+}
+
+.step-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #eee;
+    border: 2px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 4px;
+    transition: all 0.3s;
+}
+
+.status-step.active {
+    color: #000;
+}
+
+.status-step.active .step-dot {
+    background: #ffd166;
+    border-color: #000;
+    color: #000;
+}
+
+.status-step.completed .step-dot {
+    background: #4caf50;
+    border-color: #000;
+    color: #fff;
+}
+
+.status-line {
+    flex: 1;
+    height: 3px;
+    background: #ddd;
+    margin: 0 4px 16px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.status-line-fill {
+    width: 0%;
+    height: 100%;
+    background: #000;
+    transition: width 1.5s ease;
+}
+
+.status-message {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.status-message.status-done {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* ปุ่มคัดลอกใบเสร็จ */
+.copy-receipt-btn {
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border: 1.5px solid #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.copy-receipt-btn:hover {
+    background: #f0f0f0;
+}
+
+.copy-receipt-btn.copied {
+    background: #4caf50;
+    border-color: #4caf50;
+    color: #fff;
 }

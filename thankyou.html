@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Teddy Brew Cafe</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="menu-body">
 
-    <div class="menu-container text-center" style="max-width: 500px; padding: 40px;">
-        <div style="font-size: 3rem; margin-bottom: 15px;">🧸☕🥐</div>
-        <h1 style="font-family: 'Caveat', cursive; font-size: 2.8rem; margin-bottom: 15px;">Thank You!</h1>
-        <p style="font-size: 1rem; font-weight: 500; color: #444; line-height: 1.6; margin-bottom: 30px;">
-            Thank you for your order!<br>We are preparing your coffee and pastries now.
-        </p>
+    <div class="menu-container-small text-center">
+        <div class="thankyou-icon" id="statusEmoji">🧸☕</div>
+        <h1 class="thankyou-title">Thank You!</h1>
+        
+        <!-- ระบบติดตามสถานะการทำอาหารแบบจำลอง -->
+        <div class="status-tracker-box">
+            <div class="status-steps">
+                <div class="status-step active" id="step1">
+                    <div class="step-dot">1</div>
+                    <span>รับออเดอร์</span>
+                </div>
+                <div class="status-line"><div class="status-line-fill" id="line1"></div></div>
+                <div class="status-step" id="step2">
+                    <div class="step-dot">2</div>
+                    <span>กำลังชง</span>
+                </div>
+                <div class="status-line"><div class="status-line-fill" id="line2"></div></div>
+                <div class="status-step" id="step3">
+                    <div class="step-dot">3</div>
+                    <span>พร้อมเสิร์ฟ</span>
+                </div>
+            </div>
+            <p id="statusMessageText" class="status-message">ได้รับออเดอร์เรียบร้อย กำลังส่งเข้าครัว...</p>
+        </div>
 
-        <a href="index.html" class="choose-btn" style="text-decoration: none; display: inline-block; padding: 12px 35px;">กลับสู่หน้าแรก</a>
+        <!-- ใบเสร็จสรุปออเดอร์ -->
+        <div class="receipt-box">
+            <div class="receipt-header">
+                <strong id="receiptOrderNo">ORDER #001</strong>
+                <span>คุณ <strong id="receiptCustomerName">Guest</strong></span>
+            </div>
+            <div id="receiptDateTime" class="receipt-datetime"></div>
+            <div class="tag-divider"></div>
+            <div id="receiptItemsList" class="selected-drink-list"></div>
+            <div id="receiptNote" class="tag-note-display hidden"></div>
+            <div class="tag-divider"></div>
+            <div id="receiptTotal" class="total-price-display"></div>
+        </div>
+
+        <!-- ปุ่มคัดลอกใบเสร็จ -->
+        <button type="button" id="copyReceiptBtn" class="copy-receipt-btn">📋 คัดลอกรายการสั่งซื้อ</button>
+        <br>
+        <a href="index.html" id="newOrderBtn" class="choose-btn link-btn">สั่งออเดอร์ใหม่ / กลับหน้าแรก</a>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
